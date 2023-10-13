@@ -4,7 +4,7 @@
 ##copy userdata.sh file is a Must!
 ##Provide parameters if planning to deploy in other than Ohio Region
 
-##for using workspace,make command (deploying/deleteng in all or any specific us-regions) have to copy from GitRepository: 1-Makefile, 2-usa-regions (with its content)
+##for using workspace,make command (deploying/deleteng in all or any specific us-regions) have to copy from GitRepository all CaI w/u using a module
 
 ```hcl
 module "gp-jenkins" {
