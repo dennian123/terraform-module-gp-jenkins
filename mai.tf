@@ -111,8 +111,7 @@ resource "aws_instance" "web" {
      device_name = "/dev/sda1"
      volume_size = var.ebs_size
      volume_type = var.ebs_type
-    }
- 
+    } 
 
   tags = {
     Name = "group-4-Ubuntu-VM"
@@ -132,6 +131,6 @@ resource "aws_key_pair" "deployer" {
 
 
 
-output ec2 {
+output "instance_ip_addr" {
   value = aws_instance.web.public_ip
 }

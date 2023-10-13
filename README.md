@@ -1,11 +1,14 @@
 # terraform-module-gp-jenkins
 
 ## Usage:
+##copy userdata.sh file is a Must!
 ##Provide parameters if planning to deploy in other than Ohio Region
 
+##for using workspace,make command (deploying/deleteng in all or any specific us-regions) have to copy from GitRepository: 1-Makefile, 2-usa-regions (with its content)
+
 ```hcl
-module "ubuntu-jdk-jenkins" {
-    source = ""
+module "gp-jenkins" {
+    source = "dennian123/gp-jenkins/module"
     version = "v0.0.1"
     provider_region = "us-east-2"
     vpc_cidr = "10.0.0.0/16"
